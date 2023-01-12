@@ -19,8 +19,435 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
+
+}
+
+.addPost {
+  margin-left: 10px;
+}
+
+.Pagination {
+  margin-left: 400px;
+}
+
+.flex-container {
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  gap: 2rem;
+  max-width: 1200px;
+  width: 80%;
+
+  margin: auto;
+  padding: 2rem;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  width: 250px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 1px solid;
+}
+
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  width: 180px;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 1px solid;
+}
+
+.Container {
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.Box {
+  padding: 80px 60px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 1000px;
+
+
+  @media (max-width: 1000px) {
+    padding: 70px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  aside,
+  nav,
+  footer {
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 1000px),
+(max-height:1000px) {
+  aside {
+    display: none;
+  }
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 60px;
+}
+
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,
+      minmax(185px, 1fr));
+  grid-gap: 20px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fill,
+        minmax(200px, 1fr));
+  }
+
+}
+
+
+footer {
+
+  background-color: rgb(212, 245, 240);
+  bottom: 0;
+  left: 50px;
+  right: 0;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+footer:link:hover {
+
+  color: rgb(214, 132, 9);
+  transition: 200ms ease-in;
+}
+
+article {
+  padding: 1em;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5em;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+}
+
+.goTop {
+
+  position: fixed;
+  width: 100%;
+  left: 80%;
+  bottom: 40px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: red;
+}
+
+.goTopHidden {
+  display: none;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-item {
+  display: inline-block;
+
+  color: #d1d1d1;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: #ffffff;
+}
+
+.Aside {
+  right: 0;
+
+  margin-left: 84%;
+  position: relative;
+  top: 1050px;
+  width: 200px;
+}
+
+/* @media (height < 600px) {
+  aside {
+    display: none;
+  }
+} */
+
+aside {
+
+
+  background: rgba(233, 115, 203, 0.07);
+  padding: 30px 10px;
+  max-width: 160px;
+  overflow: auto;
+  z-index: 1;
+}
+
+aside h3 {
+  margin: 10px;
+}
+
+aside :link {
+
+  margin: 10px;
+  padding-top: 40px;
+
+  margin-bottom: 40px;
+
+}
+
+.aside-Link {
+  margin: 10px;
+  padding-top: 20px;
+  margin-top: 40px;
+
+}
+
+.container {
+  width: 35vw;
+  height: 11vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f1f3;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: 'row';
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+}
+
+:root {
+  --font-color: #333;
+  --background-color: #eee;
+  --link-color: cornflowerblue;
+}
+
+
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: #333;
+  --link-color: lightblue;
+  --aside-color: lightblue;
+  --button-color: lightblue;
+  --navbar-color: lightblue;
+  --body: '#363537',
+    --text: '#FAFAFA';
+
+}
+
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.toggle-theme-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.toggle-theme-wrapper span {
+  font-size: 28px;
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  height: 34px;
+  width: 60px;
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+input:checked+.slider {
+  background-color: cornflowerblue;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #bdc0c5;
+  border-radius: 4px;
+  padding: 6px 15px;
+  margin: 0 10px;
+}
+
+.overture {
+  margin-left: 440px;
+}
+
+.SearchField {
+  margin-top: 50px;
+  float: right;
+}
+
+main {
+  zoom: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  max-width: 1400px;
+  margin: 0 auto 200px auto;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main p {
+  text-align: justify;
 }
